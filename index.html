@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <title>Portifólio</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+    <header>
+        <div id="cabecalho">
+            <button id="btn-dark-mode-toggle">Olá</button>
+            <div class="cabecalho-desk">
+                <ul class="cabecalho-links">
+                    <li><a href="#sobre">Sobre mim</a></li>
+                    <li><a href="#conhecimentos">Conhecimentos</a></li>
+                    <li><a href="#projetos">Meus Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="btn-hamburguer">
+            <button id="btn-dark-mode-toggle-mobile">Olá</button>
+            <button onclick="menuShow()"> <img src="img/hamburger.png" alt="icon-hamburguer" class="icon"></button>
+        </div>
+        
+        <div class="mobile">
+            <ul class="cabecalho-links cabecalho-mobile">
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#conhecimentos">Conhecimentos</a></li>
+                <li><a href="#projetos">Meus Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="informacao">
+
+            <div class="informacao-position-links">
+                <h3>Olá, eu sou</h3>
+                <h1 class="nome_dev">Victor Lemes</h1>
+                <h3 class="informacao-cargo">Desenvolvedor Full Stack</h3>
+                <div id="informacao-links">
+                    <div class="github">
+                        <a href="https://github.com/gemeoslemes" target="_blank">
+                            <button id="btn-git"></button>
+                            <p>GitHub</p>
+                        </a>
+                    </div>
+                    <div class="linkedin">
+                        <a href="https://www.linkedin.com/in/victor-desenvolvedor/" target="_blank">
+                            <button id="btn-linkedin"></button>
+                            <p>Linkedin</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="img/desenvolvedor-sociais.png" alt="dev" class="img-desenvolvedor">
+            </div>
+        </section>
+        <section class="container-sobre">
+            <div class="sobre">
+                <img src="img/Vector2.png" alt="vec2" class="img-vector img-vecto-inverter">
+                <h1 class="titulo-sobre" id="sobre">Sobre mim</h1>
+                <img src="img/Vector2.png" alt="vec2" class="img-vector">
+            </div>
+
+            <div class="sobre-dev">
+                <img src="img/victor-dev.jpeg" alt="victor-dev" class="img-sobre">
+                <div>
+                    <p class="paragrafo-sobre">Sou um desenvolvedor full stack junior com experiência em Java, Spring Boot,
+                        PHP,
+                        HTML, CSS, JavaScript, Angular e AWS. No backend, construo aplicações robustas, isso envolve a
+                        implementação de lógica de aplicação, processamento de dados, interação com bancos de dados e
+                        garantia da segurança. Enquanto minha paixão pelo frontend se traduz em interfaces intuitivas e
+                        visualmente atraentes.<br><br> Destaco-me no ecossistema AWS, implementando soluções escaláveis e
+                        resilientes. Minha abordagem colaborativa e habilidades de comunicação eficazes me tornam um membro
+                        valioso para equipes ágeis, consolidando minha posição como um desenvolvedor versátil e proativo.
+                    </p>
+                    
+                    <a href="curriculo/Currículo-Victor.pdf" target="_blank" download class="curriculo">Currículo</a>
+                </div>
+            </div>
+            
+        </section>
+        <section class="meus-conhecimentos">
+            <div class="sobre">
+                <img src="img/Vector2.png" alt="vec2" class="img-vector img-vecto-inverter">
+                <h1 class="titulo_meus-conhecimentos" id="conhecimentos">Meus Conhecimentos</h1>
+                <img src="img/Vector2.png" alt="vec2" class="img-vector">
+            </div>
+
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="linguagens">
+                            <img src="img/java.png" alt="java">
+                        </div>
+                        <h2 class="text_nome-linguagem">JAVA</h2>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="linguagens">
+                            <img src="img/js.png" alt="javascript">
+                        </div>
+                        <h2 class="text_nome-linguagem">JavaScript</h2>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="linguagens">
+                            <img src="img/python.png" alt="python">
+                        </div>
+                        <h2 class="text_nome-linguagem">Python</h2>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="linguagens">
+                            <img src="img/spring.png" alt="spring">
+                        </div>
+                        <h2 class="text_nome-linguagem">Spring Boot</h2>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="linguagens">
+                            <img src="img/angular.png" alt="angular">
+                        </div>
+                        <h2 class="text_nome-linguagem">Angular</h2>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="linguagens">
+                            <img src="img/css.png" alt="css">
+                        </div>
+                        <h2 class="text_nome-linguagem">CSS</h2>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="linguagens">
+                            <img src="img/html.png" alt="html">
+                        </div>
+                        <h2 class="text_nome-linguagem">HTML</h2>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="linguagens">
+                            <img src="img/php.png" alt="php">
+                        </div>
+                        <h2 class="text_nome-linguagem">PHP</h2>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="linguagens">
+                            <img src="img/aws.png" alt="aws">
+                        </div>
+                        <h2 class="text_nome-linguagem">AWS</h2>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="linguagens">
+                            <img src="img/mysql.png" alt="mysql">
+                        </div>
+                        <h2 class="text_nome-linguagem">MySQL</h2>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </section>
+
+        <section class="projetos">
+            <div class="sobre">
+                <img src="img/Vector2.png" alt="vec2" class="img-vector img-vecto-inverter">
+                <h1 id="projetos">Projetos em Destaque</h1>
+                <img src="img/Vector2.png" alt="vec2" class="img-vector">
+            </div>
+
+            <div class="containers-principal">
+                <div class="container-projetos">
+                    <img src="img/capa_do_header.png" alt="capa" class="imagem-logo">
+
+                    <h3 class="titulo-projetos">VLBank</h3>
+                    <div class="descricao-projeto-vlbank">
+                        <p class="paragrafo-descricao">Descrição: Cada cliente terá que fazer o cadastro para criar uma
+                            conta,
+                            ao realizar o cadastro terá acesso as funcionalidades:
+                        </p>
+                        <ul class="lista-funcionalidades">
+                            <li>Transferência entre contas</li>
+                            <li>Extratos de tipos de contas</li>
+                            <li>Cadastro de usuário</li>
+                            <li>Validação de dados</li>
+                        </ul>
+                        <p class="paragrafo-descricao-finalidade">A ideia que simule o mais próximo da realidade. O
+                            projeto está
+                            em andamento</p>
+                        <div class="links-projeto-vlbank">
+                            <a href="https://clipchamp.com/watch/ACFbua8xeJx" class="video-vlbank" target="_blank">Link
+                                do vídeo</a>
+                            <a href="https://github.com/gemeoslemes/VLbank-main" class="repo-vlbank"
+                                target="_blank">Repositório</a>
+                        </div>
+
+                        <p class="paragrafo-tec">Tecnologias usadas no projeto:</p>
+                        <p class="tec">Java, Spring Boot, HTML, CSS, JavaScript, MySQL, Maven, Boostrap e AWS. </p>
+                    </div>
+                </div>
+
+                <div class="container-projetos">
+                    <img src="img/loja-skate.jpeg" alt="capa" class="imagem-logo">
+                    <h3 class="titulo-projetos">Loja-Skate</h3>
+                    <div class="descricao-projeto-vlbank">
+                        <p class="paragrafo-descricao">Descrição: O HZC é um projeto de loja de skate online focado em
+                            proporcionar uma interface responsiva, intuitiva e atraente. Seu principal objetivo é
+                            garantir uma navegação fácil e eficiente pelos produtos disponíveis, onde você pode ver os
+                            preços dos produtos,
+                            descrição, vídeos e localização da loja física.
+                        </p>
+
+                        <p class="paragrafo-descricao-hzc">Projeto concluído com sucesso! Acesse os links abaixo para
+                            ter uma interação mais
+                            atraente.
+                        </p>
+                        <div class="links-projeto-hzc">
+                            <a href="https://gemeoslemes.github.io/Loja-de-Skate/" class="video-vlbank"
+                                target="_blank">Ver site</a>
+                            <a href="https://github.com/gemeoslemes/Loja-de-Skate" class="repo-vlbank"
+                                target="_blank">Repositório</a>
+                        </div>
+
+                        <p class="paragrafo-tec">Tecnologias usadas no projeto:</p>
+                        <p class="tec">HTML, CSS, Figma e JavaScript.</p>
+                    </div>
+                </div>
+
+                <div class="container-projetos">
+                    <img src="img/bannertopo.png" alt="capa" class="imagem-logo2">
+                    <h3 class="titulo-projetos">Netuno</h3>
+                    <div class="descricao-projeto-vlbank">
+                        <p class="paragrafo-descricao">Descrição: Assumir a responsabilidade pelo front-end de um site
+                            projetado no Figma é uma tarefa que envolve traduzir a visão de design em uma experiência de
+                            usuário interativa e envolvente. Como responsável pelo front-end, meu papel é transformar os
+                            elementos visuais e conceitos do Figma em código funcional e esteticamente agradável,
+                            garantindo uma navegação fluida e uma experiência única para os usuários.
+                        </p>
+
+                        <div class="links-projeto-netuno">
+                            <a href="https://gemeoslemes.github.io/Projeto-Netuno/" class="video-vlbank"
+                                target="_blank">Ver site</a>
+                            <a href="https://github.com/gemeoslemes/Projeto-Netuno" class="repo-vlbank"
+                                target="_blank">Repositório</a>
+                        </div>
+
+                        <p class="paragrafo-tec">Tecnologias usadas no projeto:</p>
+                        <p class="tec">HTML, CSS, Figma e JavaScript.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contato">
+            <div class="sobre">
+                <img src="img/Vector2.png" alt="vec2" class="img-vector img-vecto-inverter">
+                <h1 id="contato">Contato</h1>
+                <img src="img/Vector2.png" alt="vec2" class="img-vector">
+            </div>
+
+            <div class="containers-box">
+                <div class="containers-bottoms">
+                    <div class="box" onclick="showContent('box1')">
+                        <button class="bottom-contato">
+                            <img src="img/olhos.png" alt="olhos" class="contato-img">
+                            <img src="img/olhos.png" alt="olhos" class="contato-img">
+                        </button>
+                    </div>
+
+                    <div class="box" onclick="showContent('box2')">
+                        <button class="bottom-contato">Experiência</button>
+                    </div>
+
+                    <div class="box" onclick="showContent('box3')">
+                        <button class="bottom-contato">Formação</button>
+                    </div>
+                </div>
+
+                <div class="descricao-contato">
+                    <div class="content" id="box1">
+                        <h1>Em busca de uma oportunidade profissional :)</h1>
+                        <p>Quem sabe na sua empresa? <img src="img/olhos.png" alt="olhos" class="contato-img"></p>
+                        <p>Estou disponível para bater um papo, você pode estar entrando em contato via e-mail victorlemes0776@gmail.com.</p>
+                    </div>
+                    <div class="content" id="box2">
+                        <h1>Desenvolvedor Back-end</h1>
+                        <p>Função - Desenvolvedor</p>
+                        <p>
+                            Na minha trajetória profissional, destaco minha atuação direta na resolução de chamados pela empresa ProNetworks,
+                            colaborando estreitamente com os clientes para compreender suas necessidades e implementar
+                            ajustes no sistema. Meu papel não se limitou apenas à correção de problemas, mas também se
+                            estendeu à evolução contínua do sistema, onde aprimorei funcionalidades existentes e
+                            introduzi melhorias substanciais utilizando Python e o banco de dados MySQL.
+                        </p>
+                    </div>
+                    <div class="content" id="box3">
+                        <h1>FAEX - Faculdade de Ciências Sociais e Aplicadas de Extrema.</h1>
+                        <p>Curso: Análise Desenvolvimento de Sistemas.</p>
+                        <p>Formação: Fevereiro/2022 - Junho/2024.</p>
+                        <p>Atualmete estou no 5° Semestre.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="js/main.js"></script>
+<script src="js/scroll.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/box.js"></script>
+<script src="js/menu-mobile.js"></script>
+</html>

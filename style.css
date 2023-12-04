@@ -1,0 +1,1048 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --branco: #FFF;
+    --darks: #1d1919;
+    --blueNeon: #08f3ff;
+    --blueDark: #08a8b0;
+    --branco_dois: #fff5f5;
+    --dark_dois: #1d1919;
+    --dark-hover: #3f3d3d;
+}
+
+[data-theme="dark"] {
+    --branco: var(--darks);
+    --dark_dois: var(--branco_dois);
+    --blueDark: var(--blueNeon);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    overflow-x: hidden; /* Impede a rolagem horizontal */
+    width: 100%;
+    background-color: var(--branco);
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 600;
+}
+
+button {
+    height: 50px;
+    width: 50px;
+    border-radius:50%;
+    border: none;
+    background-color: var(--dark_dois);
+    cursor: pointer;
+}
+
+#btn-dark-mode-toggle {
+    color: var(--branco);
+    width: 50px;
+    height: 50px;
+}
+
+#cabecalho {
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--branco);
+    padding: 1rem;
+    border-image: linear-gradient(to right, transparent, var(--dark_dois), transparent);
+    border-image-slice: 1;
+    border-image-width: 0 0 1px 0;
+    border-style: solid;
+    z-index: 1000;
+}
+
+.cabecalho-links {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    font-weight: 700;
+} 
+
+.btn-hamburguer {
+    display: none;
+}
+
+.mobile {
+    display: none;
+}
+
+.cabecalho-links li {
+    list-style: none;
+    font-size: 20px;
+    margin-left: 3rem;
+    color: var(--dark_dois);
+    text-decoration: none;
+    transition: text-decoration 0.3s ease;
+}
+
+.cabecalho-links li a {
+    text-decoration: none;
+    color: var(--dark_dois);
+}
+
+.cabecalho-links li:hover {
+    text-decoration: underline;
+}
+
+.informacao {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark_dois);
+    margin: 100px 0;
+    text-transform: uppercase;
+}
+
+.informacao-position-links {
+    margin-top: 50px;
+}
+
+#informacao-links {
+    display: flex;
+}
+
+.informacao h1 {
+    font-size: 2.8rem;
+    margin: 15px 0;
+}
+
+.nome_dev {
+    visibility: hidden;
+}
+
+.informacao h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.informacao-cargo {
+    visibility: hidden;
+    margin-bottom: 30px;
+}
+
+.informacao p {
+    width: 40%;
+    text-align: justify;
+}
+
+.github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 18px;
+    padding: 5px 15px;
+    background-color: var(--dark_dois);
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+.github a {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-decoration: none;
+}
+
+.github #btn-git {
+    color: var(--branco);
+    width: 50px;
+    height: 50px;
+}
+
+.github p {
+    padding-right: 15px;
+    color: var(--branco);
+}
+
+.linkedin #btn-linkedin {
+    color: var(--branco);
+    width: 50px;
+    height: 50px;
+}
+
+.linkedin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 15px;
+    background-color: var(--dark_dois);
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+.linkedin a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.linkedin p {
+    padding-right: 15px;
+    color: var(--branco);
+}
+
+.img-desenvolvedor {
+    width: 600px;
+    height: 500px; 
+    margin-left: 100px;
+}
+
+.container-sobre {
+    width: 100%;
+    height: 700px;
+}
+
+.sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-vector {
+    width: 350px;
+    height: 6px;
+}
+
+.img-vecto-inverter {
+    transform: scaleX(-1);
+}
+
+.titulo-sobre {
+    text-align: center;
+    margin: 40px 20px;
+    font-size: 2.8rem;
+    color: var(--dark_dois);
+}
+
+.sobre-dev {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.img-sobre {
+    width: 90%;
+    height: 80%;
+    border-radius: 10px; 
+    overflow: hidden;
+}
+
+.paragrafo-sobre {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-bottom: 80px;
+    width: 80%;
+    text-align: justify;
+    word-break: break-word;
+    font-size: 1.2rem;
+    color: var(--dark_dois);
+}
+
+.curriculo {
+    text-decoration: none;
+    padding: 15px 20px;
+    background-color: var(--dark_dois);
+    color: var(--branco);
+    border-radius: 5px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    transition: padding 0.5s;
+    margin: 100px;
+}
+
+.curriculo:hover {
+    padding: 18px 22px;
+    text-decoration: underline;
+}
+
+.meus-conhecimentos {
+    width: 100%;
+    height: 800px;
+    margin: 100px 0;
+}
+
+.titulo_meus-conhecimentos {
+    color: var(--dark_dois);
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 40px 20px;
+}
+
+.linguagens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linguagens img {
+    margin-right: 10px;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper {
+    height: 500px;
+    width: 600px;
+    border: 1px solid #918f8f;
+    box-shadow: 5px 5px 10px #918f8f;
+    border-radius: 10px;
+}
+
+.swiper-slide {
+    display: flex;
+    text-align: center;
+}
+
+.conteudo {
+    flex: 1;
+  }
+
+.text_nome-linguagem {
+    color: var(--dark_dois);
+    margin-right: 20px;
+}
+
+.projetos {
+    width: 100%;
+    height: 1300px;
+}
+
+.containers-principal {
+    display: flex;
+    justify-content: space-around;
+    gap: 24px;
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.projetos h1 {
+    color: var(--dark_dois);
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 100px 40px;
+}
+
+.container-projetos {
+    width: 60%;
+    height: 900px;
+    padding: 0 0 25px 0;
+    text-align: justify;
+    box-shadow: 10px 5px 50px var(--dark_dois);
+    border-radius: 10px;
+}
+
+.containers {
+    width: 100%;
+}
+
+.container-primeiro {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imagem-logo {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.imagem-logo2 {
+    width: 100%;
+    height: 42%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.titulo-projetos {
+    text-align: center;
+    color: var(--dark_dois);
+    font-size: 2.2rem;
+}
+
+.descricao-projeto-vlbank {
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paragrafo-descricao {
+    text-align: justify;
+    margin-top: 20px;
+    font-size: 18px;
+    color: var(--dark_dois);
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+.lista-funcionalidades {
+    font-size: 18px;
+    padding: 10px;
+    color: var(--dark_dois);
+    position: relative;
+    left: 10%;
+}
+
+.paragrafo-descricao-finalidade {
+    padding-bottom: 10px;
+    text-align: justify;
+    margin-top: 20px;
+    font-size: 18px;
+    color: var(--dark_dois);
+    width: 100%;
+}
+
+.paragrafo-descricao-hzc {
+    padding-bottom: 10px;
+    text-align: justify;
+    margin-top: 30px;
+    margin-bottom: 12px;
+    font-size: 18px;
+    color: var(--dark_dois);
+    width: 100%;
+}
+
+.links-projeto-vlbank {
+    display: flex;
+    gap: 12px;
+}
+
+.links-projeto-hzc {
+    display: flex;
+    gap: 12px;
+}
+
+.links-projeto-netuno {
+    display: flex;
+    gap: 12px;
+}
+
+.video-vlbank, .repo-vlbank {
+    background-color: var(--dark_dois);
+    color: var(--branco);
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 20px;
+    text-transform: uppercase;
+    transition: padding 0.5s; 
+}
+
+.video-vlbank:hover {
+    padding: 15px 20px;
+}
+
+.repo-vlbank:hover {
+    padding: 15px 20px;
+}
+
+.paragrafo-tec {
+    color: var(--dark_dois);
+    margin: 30px 0 10px 0;
+}
+
+.tec {
+    color: var(--dark_dois);
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.contato {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.contato .sobre h1 {
+    color: var(--dark_dois);
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 100px 40px;
+} 
+
+.containers-box {
+    display: flex;
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+    gap: 32px;
+}
+
+.containers-box .containers-bottoms .box {
+    display: flex;
+    gap: 24px;
+    margin: 10px;
+}
+
+.containers-box .containers-bottoms .contato-img {
+    width: 20px;
+}
+
+.box .bottom-contato {
+    background-color: var(--dark_dois);
+    color: var(--branco);
+    border-radius: 5px;
+    height: 40px;
+    width: 150px;
+    padding: 8px 10px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.box .bottom-contato:hover {
+    background-color: var(--dark-hover);
+}
+
+.contato .descricao-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.descricao-contato .content {
+    display: flex;
+    color: var(--dark_dois);
+}
+
+.contato .containers-box .descricao-contato img {
+    width: 20px;
+}
+
+.contato .containers-box .descricao-contato .content p {
+    display: flex;
+    gap: 20px;
+    margin: 10px auto;
+}
+
+@media (max-width: 1700px) {
+    .imagem-logo {
+        height: 35%;
+    }
+
+    .imagem-logo2 {
+        height: 35%;
+    }
+}
+
+@media (max-width: 1500px) {
+    .containers-principal {
+        max-width: 96%;
+    }
+
+    .img-sobre {
+        width: 140%;
+    }
+}
+
+@media (max-width: 1400px) {
+    .containers-principal {
+        max-width: 98%;
+    }
+
+    .titulo-projetos {
+        font-size: 24px;
+    }
+
+    .paragrafo-descricao {
+        font-size: 16px;
+    }
+
+    .paragrafo-descricao-finalidade {
+        font-size: 16px;
+    }
+
+    .paragrafo-descricao-hzc {
+        font-size: 16px;
+    }
+
+    .video-vlbank, .repo-vlbank {
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .video-vlbank, .repo-vlbank {
+        margin-right: 2px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .containers-principal {
+        flex-direction: column;
+        max-width: 75%;
+        align-items: center;
+    }
+
+    .projetos {
+        height: 100%;
+    }
+
+    .img-sobre {
+        width: 256%;
+    }
+
+    .paragrafo-sobre {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    .img-desenvolvedor {
+        width: 380px;
+        height: 400px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .informacao {
+        max-width: 100%;
+    }
+
+    .img-desenvolvedor {
+        width: 380px;
+        height: 400px;
+        margin-left: 70px;
+    }
+
+    .sobre-dev {
+        max-width: 85%;
+    }
+
+    .titulo-sobre {
+        font-size: 2rem;
+    }
+
+    .img-vector {
+        width: 325px;
+    }
+
+    .paragrafo-sobre {
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+
+    .container-sobre {
+        height: 810px;
+    }
+    
+    .img-sobre {
+        width: 2900px;
+        height: 500px;
+    }
+
+    .titulo_meus-conhecimentos {
+        font-size: 2rem;
+    }
+
+    .projetos {
+        height: 100%;
+    }
+
+    .projetos h1 { 
+        font-size: 2rem;
+    }
+
+    .containers-principal {
+        align-items: center;
+        flex-direction: column;
+        max-width: 90%;
+    }
+
+    .titulo-projetos { 
+        font-size: 1.6rem;
+    }
+
+    .container-projetos {
+        height: 100%;
+    }
+
+    .paragrafo-descricao {
+        font-size: 15px;
+    }
+
+    .paragrafo-descricao-finalidade {
+        font-size: 15px;
+    }
+
+    .paragrafo-descricao-hzc {
+        font-size: 15px;
+    }
+    
+}
+
+@media (max-width: 800px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    heml, body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    #cabecalho {
+        display: none;
+    }
+
+    .btn-hamburguer {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px;
+    }
+
+    .btn-hamburguer button {
+        background-color: var(--branco_dois);
+    }
+
+    .icon {
+        width: 25px;
+        cursor: pointer;
+    }
+
+    .open {
+        display: block;
+    }
+
+    .cabecalho-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .cabecalho-mobile li {
+        border-image: linear-gradient(to right, transparent, var(--dark_dois), transparent);
+        border-image-slice: 1;
+        border-image-width: 0 0 1px 0;
+        border-style: solid;
+    }
+
+    .informacao {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .img-desenvolvedor {
+        width: 400px;
+        height: 300px;
+        margin-left: 0px;
+    } 
+
+    .container-sobre {
+        height: 100%;
+    }
+
+    .container-sobre{
+        height: 100%;
+    }
+
+    .img-sobre {
+        width: 90%;
+        height: 100%;
+    }
+
+    .titulo-sobre {
+        font-size: 2rem;
+    }
+
+    .img-vector {
+        width: 200px;
+    }
+
+    .sobre-dev {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .paragrafo-sobre {
+        margin: 50px auto;
+    }
+
+    .curriculo {
+        margin: auto 50px;
+        color: var(--branco);
+    }
+
+    .titulo_meus-conhecimentos {
+        font-size: 1.9rem;
+    }
+
+    .swiper {
+        height: 470px;
+        width: 510px;
+    }
+
+    .projetos {
+        height: 100%;
+    }
+
+    .projetos h1 {
+        font-size: 1.7rem;
+    }
+
+    .containers-principal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-vlbank, .repo-vlbank {
+        margin-right: 0;
+    }
+
+    .imagem-logo2 {
+        height: 35%;
+    }
+
+    .contato {
+        height: 100%;
+    }
+
+    .meus-conhecimentos {
+        margin: 100px 0 20px 0;
+    }
+}
+
+@media (max-width: 700px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    heml, body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .sobre-dev {
+        max-width: 90%;
+    }
+
+    .titulo_meus-conhecimentos {
+        font-size: 32px;
+    }
+
+    .img-vector {
+        width: 150px;
+    }
+
+    .projetos h1 {
+        font-size: 2rem;
+    }
+
+    .container-projetos {
+        width: 80%;
+    }
+
+    .containers-box {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html, body {
+        overflow-x: hidden; /* Impede a rolagem horizontal */
+    }
+
+    .img-sobre {
+        width: 90%;
+        height: 100%;
+    }
+
+    .containers-principal {
+        max-width: 85%;
+    }
+
+    .container-projetos {
+        width: 100%;
+    }
+
+    .informacao {
+        height: 100%;
+    }
+
+    .container-sobre { 
+        height: 100%;
+    }
+
+    .containers-box {
+        width: 100%;
+        max-width: 90%;
+        flex-direction: column;
+    }
+
+    .containers-box .containers-bottoms .box {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 500px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        overflow-x: hidden !important;
+    }
+
+    .informacao {
+        height: 100%;
+    }
+
+    .container-sobre { 
+        height: 100%;
+    }
+
+    .img-desenvolvedor {
+        margin-top: 50px;
+        margin-left: 0;
+    }
+
+    .img-vector {
+        width: 90px;
+    }
+
+    .img-sobre {
+        width: 90%;
+        height: 100%;
+    }
+
+    .paragrafo-sobre {
+        width: 90%;
+        font-size: 15px;
+    }
+
+    .curriculo {
+        margin: 0 0 0 15px;
+    }
+
+    .meus-conhecimentos {
+        height: 640px;
+    }
+
+    .swiper {
+        height: 400px;
+        width: 350px;
+    }
+
+    .linguagens img  {
+        height: 300px;
+        width: 300px;
+    }
+
+    .swiper-slide {
+        width: 100%;
+        margin-right: 30px;
+    }
+
+    .titulo-sobre {
+        font-size: 1.6rem; 
+    }
+
+    .titulo-projetos {
+        font-size: 26px;
+    }
+
+    .titulo_meus-conhecimentos {
+        font-size: 1.6rem;
+    }
+
+    .projetos h1 {
+        font-size: 1.6rem;
+    }
+
+    .container-projetos {
+        width: 95%;
+    } 
+    
+    .containers-principal {
+        width: 100%;
+        max-width: 95%;
+    }
+    
+    .descricao-projeto-vlbank {
+        max-width: 90%;
+    }
+
+    .descricao-projeto-vlbank p {
+        font-size: 14px;
+    }
+
+    .paragrafo-descricao {
+        max-width: 100%;
+    }
+
+    .links-projeto-vlbank {
+        margin: 10px 0;
+    } 
+
+    .container-projetos {
+        height: 100%;
+        padding: 0 0 20px 0;
+    }
+
+    .contato .sobre h1 {
+        font-size: 1.6rem;
+    }
+
+    .containers-box {
+        width: 100%;
+        max-width: 90%;
+        flex-direction: column;
+    }
+
+    .box .bottom-contato {
+        height: 40px;
+        width: 120px;
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    .containers-box .containers-bottoms .box {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .descricao-contato .content {
+        margin: 0 0 20px 0;
+    }
+
+    .contato .containers-box .descricao-contato .content p {
+        width: 100%;
+        max-width: 90%;
+        margin: 0 auto;
+        text-align: justify;
+    }
+}
